@@ -44,23 +44,35 @@ function softwareSales() {
 
 function timeCalculator() {
     var secondInput = parseInt(prompt("Number of seconds"));
+    var minutes = function(x) {
+        console.log("Minutes: " + Math.floor(x / 60));
+        return (x % 60);
+    }
+    var hours = function(x) {
+        console.log("Minutes: " + Math.floor(x / 3600));
+        return (x % 3600);
+    }
+    var days = function(x) {
+        console.log("Minutes: " + Math.floor(x / 86400));
+        return (x % 86400);
+    }
     if (secondInput >= 60 && secondInput < 3600) {
-		var minutes = (secondInput/60);
-        console.log("Minutes: " + (minutes));
-    }
-    else if (secondInput >= 3600 && secondInput < 86400) {
-		var hours = (secondInput/3600);
-        console.log("Hours: " + (hours));
-    }
-    else if (secondInput >= 86400) {
-		var days = (secondInput/86400);
-        console.log("Days: " + (days));
-    }
-    else if (secondInput < 60) {
+        secondInput = minutes(secondInput);
         console.log("Seconds: " + secondInput);
     }
+    else if (secondInput >= 3600 && secondInput < 86400) {
+        secondInput = hours(secondInput);
+        secondInput = minutes(secondInput);
+        console.log("Seconds: " + secondInput);
+    }
+    else if (secondInput >= 86400) {
+        secondInput = days(secondInput);
+        secondInput = hours(secondInput);
+        secondInput = minutes(secondInput);
+        console.log("Seconds: " + secondInput);
+    }
+    else console.log("Seconds: " + secondInput);
 }
-
 function hotDogCalculator() {
 // Put your solution to Exercise #4 here.
 }

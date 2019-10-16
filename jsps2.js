@@ -45,15 +45,15 @@ function softwareSales() {
 function timeCalculator() {
     var secondInput = parseInt(prompt("Number of seconds"));
     if (secondInput >= 60 && secondInput < 3600) {
-		var minutes = Math.trunc(secondInput/60);
+		var minutes = (secondInput/60);
         console.log("Minutes: " + (minutes));
     }
     else if (secondInput >= 3600 && secondInput < 86400) {
-		var hours = Math.trunc(secondInput/3600);
+		var hours = (secondInput/3600);
         console.log("Hours: " + (hours));
     }
     else if (secondInput >= 86400) {
-		var days = Math.trunc(secondInput/86400);
+		var days = (secondInput/86400);
         console.log("Days: " + (days));
     }
     else if (secondInput < 60) {

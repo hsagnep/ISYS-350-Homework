@@ -49,11 +49,11 @@ function timeCalculator() {
         return (x % 60);
     }
     var hours = function(x) {
-        console.log("Minutes: " + Math.floor(x / 3600));
+        console.log("Hours: " + Math.floor(x / 3600));
         return (x % 3600);
     }
     var days = function(x) {
-        console.log("Minutes: " + Math.floor(x / 86400));
+        console.log("Days: " + Math.floor(x / 86400));
         return (x % 86400);
     }
     if (secondInput >= 60 && secondInput < 3600) {

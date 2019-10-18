@@ -26,7 +26,7 @@ function softwareSales() {
     var packageCost = 100;
 //Total cost before the discount is the number of packages ordered multiplied by the price of each package
     var total = numOrdered * packageCost;
-//If the number of packages ordered is greater than or equal to 10 but less than or equal to 19 give a 10%(.10) discount. Repeat steps for other discount percentages and respective ranges.
+//If the number of packages ordered is greater than or equal to 10 and less than or equal to 19 give a 10%(.10) discount. Repeat steps for other discount percentages and respective ranges.
     if (numOrdered >= 10 && numOrdered <= 19) {
 //The discount is your total multiplied by the discount percentage. 
         console.log("Your discount is " + (total * .10) + " dollars.");

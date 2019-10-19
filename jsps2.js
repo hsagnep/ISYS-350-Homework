@@ -76,14 +76,14 @@ function timeCalculator() {
     }
 //If the input is greater or equal to 86400 then this code will execute. Outputting days, hours, minutes, and seconds.
     else if (secondInput >= 86400) {
-        document.write("Days: " + (days));
-        document.write("Hours: " + (hours));
-        document.write("Minutes: " + (minutes));
-        document.write("Seconds: " + (seconds));
+        console.log("Days: " + (days));
+        console.log("Hours: " + (hours));
+        console.log("Minutes: " + (minutes));
+        console.log("Seconds: " + (seconds));
     }
 //If the input is less than 60 then this code will execute. Outputting seconds.
     else if (secondInput < 60) {
-        document.write("Seconds: " + secondInput);
+        console.log("Seconds: " + secondInput);
     }
 }
 

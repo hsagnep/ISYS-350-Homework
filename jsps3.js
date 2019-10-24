@@ -51,7 +51,7 @@ function hiLo() {
 //// Put your solution to Exercise #4 here
 //    var randomNumber = Math.floor(Math.random() * 100) + 1;
 //    var guess = parseInt(prompt("Enter Guess: "));
-//    while (true) {
+//    while (guess != randomNumber) {
 //        if (guess < randomNumber) {
 //            console.log("Guess was too low");
 //        }

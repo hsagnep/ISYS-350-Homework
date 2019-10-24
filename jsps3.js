@@ -31,8 +31,9 @@ function penniesFromHeaven() {
 function hiLo() {
 // Put your solution to Exercise #4 here
     var randomNumber = Math.floor(Math.random() * 100) + 1;
-    while (true) {
-        var guess = parseInt(prompt("Enter Guess: "));
+    var guess = 101;
+    while (guess != randomNumber) {
+        guess = parseInt(prompt("Enter Guess: "));
         if (guess < randomNumber) {
             console.log("Guess was too low");
         }

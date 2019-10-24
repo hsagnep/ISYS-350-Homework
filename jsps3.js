@@ -10,7 +10,27 @@ function tuitionCount() {
 
 function budgetAnalysis() {
 // Put your solution to Exercise #2 here.
-
+    var budget = parseInt(prompt("What is your budget? "));
+    var spending = parseInt(prompt("Enter your spendings: "))
+    var totalSpending = spending;
+    
+    if (totalSpending >= budget) {
+        console.log("YOU ALREADY BROKE YOUR BUDGET???");
+    }
+    else {
+        while (spending != NaN) {
+            spending = parseInt(prompt("Enter your spendings, press enter while not entering anything to stop: "));
+            if ((totalSpending + spending) >= budget) {
+                console.log("Spending has exceeded budget or is at budget");
+                break;
+            }
+            else {
+                totalSpending += spending;
+            }
+        }
+    }
+    
+    console.log("Your money is at: " + totalSpending);
 
 }
 

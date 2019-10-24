@@ -46,3 +46,22 @@ function hiLo() {
         }
     }
 }
+
+//function hiLo() {
+//// Put your solution to Exercise #4 here
+//    var randomNumber = Math.floor(Math.random() * 100) + 1;
+//    var guess = parseInt(prompt("Enter Guess: "));
+//    while (true) {
+//        if (guess < randomNumber) {
+//            console.log("Guess was too low");
+//        }
+//        else if (guess > randomNumber) {
+//            console.log("Guess was too high");
+//        }
+//        else if (guess == randomNumber) {
+//            console.log("You Won");
+//            break;
+//        }
+//        randomNumber = Math.floor(Math.random() * 100) + 1;
+//    }
+//}

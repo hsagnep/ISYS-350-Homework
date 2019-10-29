@@ -1,7 +1,9 @@
 function tuitionCount() {
 // Put your solution to Exercise #1 here.
     var tuition = 8000;
+    //for loop starts at i=0(i = year #), while year is less than 5, increment year by 1)
     for (i = 0; i < 5; i++) {
+        //Tuition increases by 3% every year ex. year 1 = 8000*.03 = 240 then add to the current tuition of 8000. year 2 = 8240*.03 etc.
         tuition += (tuition * .03);
     }
     console.log("The tuition amount will be " + Math.floor(tuition) + " dollars.");

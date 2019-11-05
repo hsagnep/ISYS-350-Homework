@@ -1,19 +1,44 @@
 function propertyTax(value) {
 // Put your solution to Exercise #1 here.
     var assesementValue = value * .6;
-    var propertyTax = assesementValue * .0064;
-    console.log(value);
-    //console.log("Property tax is " + propertyTax);
+    var propertyTax = (assesementValue * .0072).toFixed(2);
+    //console.log("Assessment Value is " + assesementValue)
+    console.log("The Property tax is " + propertyTax);
+    //Value being passed is 10000 but different results?
 }
 
-function budgetAnalysis() {
+function futureValue(P,i,t) {
 // Put your solution to Exercise #2 here.
+    return (P * (1+i) ** t).toFixed(2);
 }
-
-function penniesFromHeaven() {
+/*
+function testScores() {
 // Put your solution to Exercise #3 here.
-}
+    function calcAverage(g1,g2,g3,g4,g5){
+        return (g1+g2+g3+g4+g5) / 5;
 
-function hiLo() {
-// Put your solution to Exercise #4 here.
+    }
+    function determineGrade(){
+
+
+
+
+
+    }
+
+}
+*/
+function paintJob(squareFeet) {
+// Put your solution to Exercise #4 here
+    var requiredPaint = (squareFeet /112);
+    var requiredLabor = (squareFeet / 112) * 8;
+    var billedPaint = requiredPaint * 15;
+    var billedLabor = requiredLabor * 35;
+    var totalBill = billedPaint + billedLabor;
+    console.log(requiredPaint + " gallons of paint are required.");
+    console.log(requiredLabor + " hours of labor are required.");
+    console.log("The cost of the paint is $" + billedPaint + ".");
+    console.log("The labor charges are $" + billedLabor + ".");
+    console.log("The total cost is $" + totalBill + ".");
+
 }

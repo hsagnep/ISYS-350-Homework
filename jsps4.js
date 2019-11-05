@@ -11,23 +11,42 @@ function futureValue(P,i,t) {
 // Put your solution to Exercise #2 here.
     return (P * (1+i) ** t).toFixed(2);
 }
-/*
+
 function testScores() {
 // Put your solution to Exercise #3 here.
-    function calcAverage(g1,g2,g3,g4,g5){
-        return (g1+g2+g3+g4+g5) / 5;
-
+    var gradeArray = Array()
+    for (i=0,i<5,i++){
+        gradeArray[i] = prompt(" Enter Grade " + i);
     }
-    function determineGrade(){
-
-
-
-
-
+    function calcAverage(gradeArray){
+        var total = 0;
+        for (i=0,i < gradeArray.length,i++){
+            total += gradeArray[i];
+        }
+         console.log((total) / gradeArray.length);
     }
+    function determineGrade(gradeArray){
+        var response = Array("The letter grade for the 1st score is ", "The letter grade for the 2nd score is ","The letter grade for the 3rd score is ", "The letter grade for the 4th score is ", "The letter grade for the 5th score is ");
+        for (i = 0, i < gradeArray.length,i++){
+            if (gradeArray[i] < 60){
+                console.log(response[-1] + "F" + ".");
+            }
+            else if (gradeArray[i] >= 60 && gradeArray[i] <= 69){
+                console.log(response[-2] + "D" + ".";)
+            }
+            else if (gradeArray[i] >= 70 && gradeArray[i] <= 79){
+                console.log(response[-3] + "C" +".");
+            }
+            else if (gradeArray[i] >= 80 && gradeArray[i] <= 89){
+                console.log(response[-4] + "B" + ".");
+            }
+            else if (gradeArray[i] >= 90 && gradeArray[i]){
+                console.log(response[-5] + "A" + ".");
+            }
 
+        }
+    }
 }
-*/
 function paintJob(squareFeet) {
 // Put your solution to Exercise #4 here
     var requiredPaint = (squareFeet /112);

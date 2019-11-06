@@ -14,34 +14,34 @@ function futureValue(P,i,t) {
 
 function testScores() {
 // Put your solution to Exercise #3 here.
-    var gradeArray = Array()
-    for (i=0,i<5,i++){
-        gradeArray[i] = prompt(" Enter Grade " + i);
+    var gradeArray = []
+    for (i=0;i<5;i++){
+        gradeArray[i] = parseInt(prompt(" Enter Grade " + i));
     }
     function calcAverage(gradeArray){
         var total = 0;
-        for (i=0,i < gradeArray.length,i++){
+        for (i=0;i < gradeArray.length;i++){
             total += gradeArray[i];
         }
-         console.log((total) / gradeArray.length);
+         document.write(total / gradeArray.length);
     }
     function determineGrade(gradeArray){
-        var response = Array("The letter grade for the 1st score is ", "The letter grade for the 2nd score is ","The letter grade for the 3rd score is ", "The letter grade for the 4th score is ", "The letter grade for the 5th score is ");
-        for (i = 0, i < gradeArray.length,i++){
+        var response = ["The letter grade for the 1st score is ", "The letter grade for the 2nd score is ","The letter grade for the 3rd score is ", "The letter grade for the 4th score is ", "The letter grade for the 5th score is "];
+        for (i = 0; i < gradeArray.length;i++){
             if (gradeArray[i] < 60){
-                console.log(response[-1] + "F" + ".");
+                document.write(response[-1] + "F" + ".");
             }
             else if (gradeArray[i] >= 60 && gradeArray[i] <= 69){
-                console.log(response[-2] + "D" + ".";)
+                document.write(response[-2] + "D" + ".");
             }
             else if (gradeArray[i] >= 70 && gradeArray[i] <= 79){
-                console.log(response[-3] + "C" +".");
+                document.write(response[-3] + "C" +".");
             }
             else if (gradeArray[i] >= 80 && gradeArray[i] <= 89){
-                console.log(response[-4] + "B" + ".");
+                document.write(response[-4] + "B" + ".");
             }
-            else if (gradeArray[i] >= 90 && gradeArray[i]){
-                console.log(response[-5] + "A" + ".");
+            else if (gradeArray[i] >= 90 && gradeArray[i] <= 100){
+                document.write(response[-5] + "A" + ".");
             }
 
         }

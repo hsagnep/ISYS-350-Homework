@@ -13,7 +13,7 @@ function buildDistributionArray(scoresArray) {
         if scoresArray[i] <= 90{
             num_A+=1
         }
-        if scoresArray[i] >= 80 && scoresArray[i] <= 9 {
+        if scoresArray[i] >= 80 && scoresArray[i] <= 89 {
             num_B+=1
         }
         if scoresArray[i] >= 70 && scoresArray[i] <= 79 {

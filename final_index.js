@@ -10,23 +10,23 @@ function buildDistributionArray(scoresArray) {
     var num_D = 0;
     var num_F = 0;
     for (i=0;i<scoresArray.length;i++){
-        if scoresArray[i] <= 90{
+        if (scoresArray[i] <= 90){
             num_A+=1
         }
-        if scoresArray[i] >= 80 && scoresArray[i] <= 89 {
+        if (scoresArray[i] >= 80 && scoresArray[i] <= 89) {
             num_B+=1
         }
-        if scoresArray[i] >= 70 && scoresArray[i] <= 79 {
+        if (scoresArray[i] >= 70 && scoresArray[i] <= 79) {
             num_C+=1
         }
-        if scoresArray[i] >= 60 && scoresArray[i] <= 69 {
+        if (scoresArray[i] >= 60 && scoresArray[i] <= 69) {
             num_D += 1
         }
         else{
             num_F+=1
         }
     }
-    return [A,B,C,D,F]
+    return [num_A,num_B,num_C,num_D,num_F]
 }
 
 function setTableContent(userInput) {

@@ -10,7 +10,7 @@ function buildDistributionArray(scoresArray) {
     var num_D = 0;
     var num_F = 0;
     for (i=0;i<scoresArray.length;i++){
-        if (scoresArray[i] <= 90){
+        if (scoresArray[i] >= 90){
             num_A+=1
         }
         if (scoresArray[i] >= 80 && scoresArray[i] <= 89) {
@@ -22,7 +22,7 @@ function buildDistributionArray(scoresArray) {
         if (scoresArray[i] >= 60 && scoresArray[i] <= 69) {
             num_D += 1
         }
-        else{
+        if (scoresArray[i] < 60){
             num_F+=1
         }
     }

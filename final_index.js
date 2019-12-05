@@ -58,7 +58,7 @@ function setTableContent(userInput) {
 
     // Initialize markup string for table's innerHTML
     var row1 = "<tr><td><div style='height: " + distribution[0]*10 + "px' class='bar0'></div></td><td><div style='height: " + distribution[1]*10 + "px' class='bar1'></div></td><td><div style='height: " + distribution[2]*10 + "px' class='bar2'></div></td><td><div style='height: " + distribution[3]*10 + "px' class='bar3'></div></td><td><div style='height: " + distribution[4]*10 + "px' class='bar4'></div></td></tr>";
-    var row2 = "<tr><td>A</td><td>B</td><td>C</td><td>D</td><td></td></tr>";
+    var row2 = "<tr><td>A</td><td>B</td><td>C</td><td>D</td><td>F</td></tr>";
     var row3 = "<tr><td>" + distribution[0] + "</td><td>" + distribution[1] + "</td><td>" + distribution[2] + "</td><td>" + distribution[3] + "</td><td>" + distribution[4] + "</td></tr>";
     var markup = row1 + row2 + row3;
     

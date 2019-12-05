@@ -60,6 +60,13 @@ function setTableContent(userInput) {
     var markup = "";
     // Enter your code here
     // --------------------
+    if (userInput){
+        var row_1 = tbl.insertRow(0);
+        var row_2 = tbl.insertRow(1);
+        var row_3 = tbl.insertRow(2);
+        return row_1,row_2,row_3
+    }
+
     
     // Set the table's innerHTML
     tbl.innerHTML = markup;

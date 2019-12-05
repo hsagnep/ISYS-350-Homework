@@ -63,7 +63,6 @@ function setTableContent(userInput) {
     var markup = row1 + row2 + row3;
     
     
-    // Awful practice btw don't do this IRL
     // Set the table's innerHTML
     tbl.innerHTML = markup;
 }
